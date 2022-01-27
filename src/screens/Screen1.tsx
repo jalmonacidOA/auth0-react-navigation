@@ -2,11 +2,6 @@ import React, { useCallback } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import Auth0 from 'react-native-auth0';
 
-// const auth0 = new Auth0({
-//   domain: '{YOUR_AUTH0_DOMAIN}',
-//   clientId: '{YOUR_CLIENT_ID}',
-// });
-
 const auth0 = new Auth0({
   domain: 'dev-r02o15nq.us.auth0.com',
   clientId: 'D9REuOayr2QPwSoGCOzH7GX7Neca6UWM',
