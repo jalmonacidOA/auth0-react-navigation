@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'aliceblue'
+    backgroundColor: 'lightsalmon'
   },
 })
 
-export const Screen1 = () => (
+export const Screen4 = () => (
   <View style={styles.container}>
-    <Text>SCREEN 1</Text>
+    <Text>SCREEN 4</Text>
   </View>
 );

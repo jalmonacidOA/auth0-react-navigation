@@ -1,16 +1,9 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React, { useEffect } from 'react';
 
-import { Screen1, Screen2 } from '../screens';
+import { AuthRouter } from './AuthRouter';
+import { AppRouter } from './AppRouter';
 
-const Stack = createNativeStackNavigator();
-
-export const AppStack = () => (
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName="Screen_1" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Screen_1" component={Screen1} />
-      <Stack.Screen name="Screen_2" component={Screen2} />
-    </Stack.Navigator>
-  </NavigationContainer>
-)
+export const Router = () => {
+  // return agent.agentProfile ? <AppRouter /> : <AuthRouter />;
+  return <AuthRouter />;
+};
