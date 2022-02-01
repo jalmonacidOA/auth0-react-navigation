@@ -26,11 +26,11 @@ const TabNavigator = () => (
     />
     <Tab.Screen
       name="Screen 2"
-      component={Screen1}
+      component={Screen2}
     />
     <Tab.Screen
       name="Screen 3"
-      component={Screen1}
+      component={Screen3}
     />
   </Tab.Navigator>
 );

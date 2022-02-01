@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { AuthRouter } from './AuthRouter';
 import { AppRouter } from './AppRouter';
+import { useAppSelector } from '../redux/hooks';
 
 export const Router = () => {
-  // return agent.agentProfile ? <AppRouter /> : <AuthRouter />;
-  return <AuthRouter />;
+  const { handleAuthResponse } = useAppSelector((state) => state.auth);
+
+  return handleAuthResponse.accessToken.length ? <AppRouter /> : <AuthRouter />;
 };
